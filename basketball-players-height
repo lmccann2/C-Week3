@@ -1,0 +1,41 @@
+//************************************
+//C++
+//Levi McCann
+//01/26/2020
+//Basketball Player height program
+//Hendrickson
+//************************************
+
+
+
+//The only one needed here was the <iostream>
+//I was trying different ideas before the program was done.
+#include <iostream>
+#include <stdlib.h>
+#include<stdio.h>
+#include <cpio.h>
+#include <cpio.h>
+
+using namespace std;
+
+
+int main()
+//int main()
+ {
+   //Clear the system output first
+  system("CLS");
+  //define variables integers
+  auto heightInches = 74;                         // Total height in inches
+  auto heightFeet = heightInches / 12;            // Subtotal height in feet, not including inches
+  auto heightFeetRemainder = heightInches % 12;
+  cout<<"The player is how many inches tall? ";
+  cin>>heightInches;
+  //inch = feet * 12;
+  cout<<"The player is " <<heightInches <<"\" tall \n"
+  <<"this is " <<heightFeet <<"\' " <<"\n" <<heightFeetRemainder <<"\".";
+  
+   //int num1 = 6, num2 = 2
+
+return 0;
+//  std::cout << "Hello World!\n";
+}
