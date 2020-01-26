@@ -1,0 +1,28 @@
+//***********************************************
+//Levi McCann
+//01/26/2020
+//Sales Prediction PC2-2
+//Hendrickson
+//***********************************************
+
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+
+  double percent = .58, //percent of eastcoast sales
+         salesInYear = 8.6E6,  // 8.6 million sales
+         totalSales = percent * salesInYear;
+
+  // calculate totalSales by multiplying 8.6 million by //percent = 58%
+
+// calculates and prints the sales prediction for  //percent of salesInYear
+cout <<"If the company has $8.6 milllion in sales, \n"
+     <<"the east coast division sales  will have \n"
+     << "generated, " << totalSales << " of $8.6 million.";
+  return 0;
+
+  //std::cout << "Hello World!\n";
+}
