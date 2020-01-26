@@ -1,0 +1,59 @@
+//********************************
+//C++ program
+//Levi McCnan
+//01/26/2020
+//Diamond Pattern 2-16
+//Hendrickson
+//********************************
+
+
+#include <iostream>
+using namespace std;
+
+
+
+int main() {
+//need  6 counter variables
+  int i, j, k, l, m, n;
+
+  for(i=1; i<=5; i++) //upper triangle
+  {
+
+
+      for(j=5; j>=i; j--) //spacing
+      {
+      cout << " "; //need 5 spaces used decrement to //space
+
+
+      }
+      for(j=1; j<=i; j++) //outer llop
+      {
+        cout << " *";
+      }
+    
+      
+      cout <<endl;// Ends outer loop the curly bracket
+      //below allows this to print as a triangle
+      //if this curly bracket not here all *'s print on //same line
+
+}
+//Now  for the lower triangle
+
+  for (k=1; k<=4; k++) //runs 4 times since i variable //is common between them
+  {
+      for(l=0; l<=k; l++) //for spaces
+      {
+        cout<<" "; //enter number of spaces
+
+      }
+      for(m=4; m>=k; m--)  //for *'s
+      {
+        cout<<" *";
+      }
+      cout<<endl ; //next line has to be here
+      //the curly brace needs to be lewo to format //correct
+  }
+    
+      return 0;
+//  std::cout << "Hello World!\n";
+}
