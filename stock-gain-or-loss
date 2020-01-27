@@ -1,0 +1,42 @@
+//*********************************
+//C++
+//Levi McCann
+//01/26/2020
+//Stock Profit and Loss 2-13
+//CIS 61 Hendrickson
+
+
+#include <iostream>
+#include <cmath> //did not need but practicing adding more modules
+using namespace std;
+
+
+
+
+int main()
+ {
+   //define constants and variables
+    const float COMISSION_PERCENT = .02;
+    int shares_bought = 750,
+        shares_price = 35,
+        total_paid = shares_bought * shares_price;
+    //calculate total comission
+    float total_comission = total_paid * COMISSION_PERCENT;
+    //calc total_amount_paid
+    float total_Amt_Paid = total_comission + total_paid;
+    
+    //Print output to display
+    cout<<endl <<endl ;
+    cout<<"The total amount paid without comission is: $" <<total_paid <<endl;
+    cout<<"The total amount of comission is: $"<<total_comission <<endl;
+    cout<<"The total amount paid including comission: $"<<total_Amt_Paid <<endl;
+
+
+    cout<<endl <<endl ;
+
+    
+//return end of integer of main
+
+return 0;
+//  std::cout << "Hello World!\n";
+}
